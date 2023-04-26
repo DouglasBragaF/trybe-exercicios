@@ -1,2 +1,2 @@
-# trybe-exercicios
+# Meu Portfólio de Exercícios
 curso trybe

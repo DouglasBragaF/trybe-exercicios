@@ -1,0 +1,14 @@
+h2 {
+    color: green;
+    font-size: 2em;
+
+}
+p {
+    font-family: monospace;
+}
+body{
+    font-size: 20px;
+}
+.list-style{
+    background-color: blue;
+}

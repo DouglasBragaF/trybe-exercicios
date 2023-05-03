@@ -79,3 +79,52 @@ switch (peca.toLowerCase()) {
     default:
         console.log(peca + "Está peça não existe! Peças: rei; rainha; bispo; cavalo; torre e peão.");
 }
+
+console.log("Exercicio-7");
+let nota = "";
+let porcentagem = 85;
+
+if (porcentagem >= 90){
+    nota = "A";
+}
+else if (porcentagem >= 80){
+    nota = "B";
+}
+else if (porcentagem >= 70){
+    nota = "C";
+}
+else if (porcentagem >= 60){
+    nota = "D";
+}
+else if (porcentagem >= 50){
+    nota = "E";
+}
+else if (porcentagem > 50){
+    nota = "F";
+}
+else if (porcentagem > 100 || porcentagem < 0){
+    console.log("ERRO! O percentual deve ser de 0 a 100.");
+}
+console.log(nota);
+
+console.log("Exercicio-8");
+let num1 = 1;
+let num2 = 2;
+let num3 = 3;
+let par = false;
+
+if (num1 / 2 == 0 || num2 / 2 == 0 || num3 / 2 == 0){
+    par = true;
+}
+console.log(par);
+
+console.log("Exercicio-9");
+let numa = 1;
+let numb = 2;
+let numc = 3;
+let impar = false;
+
+if (numa / 2 == 1 || numb / 2 == 1 || numc / 2 == 1){
+    impar = true;
+}
+console.log(impar);

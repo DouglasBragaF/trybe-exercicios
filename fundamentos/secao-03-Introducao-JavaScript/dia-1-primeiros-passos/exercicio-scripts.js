@@ -138,3 +138,46 @@ if (valorVenda > 0 && custo > 0){
     lucro = (valorVenda - (custo + (custo * 0.2)));
     console.log("Valor total do lucro com mil produtos vendidades: $" + (lucro * 1000) );
 }
+
+console.log("Exercicio-11");
+let salarioBruto = 3000;
+let salarioBase = 0;
+let salarioLiquido = 0;
+let aliquotaINSS = 0;
+let aliquotaIR = 0;
+let parcelaIR = 0;
+
+if (salarioBruto <= 1556.94){
+    aliquotaINSS = 0.08;
+}
+else if (salarioBruto > 1556.94 && salarioBruto <= 2594.92){
+    aliquotaINSS = 0.09;
+}
+else if (salarioBruto > 2594.92 && salarioBruto <= 5189.82){
+    aliquotaINSS = 0.11;
+}
+else if (salarioBruto > 5189.82){
+    aliquotaINSS = 570.88;
+    salarioBase = salarioBruto - aliquotaINSS;
+}
+else if (salarioBruto < 0){
+    console.log("O número precisa ser positivo!");
+}
+salarioBase = salarioBruto - (salarioBruto * aliquotaINSS);
+if (salarioBase <= 1903.98){
+    aliquotaIR = 0;
+}
+else if (salarioBase > 1903.98 && salarioBase <=2826.65){
+    aliquotaIR = 0.075;
+    parcelaIR = 142.8;
+}
+else if (salarioBase > 2826.65 && salarioBase <=3751.05){
+    aliquotaIR = 0.15;
+    parcelaIR = 354.8;
+}
+else if (salarioBase > 3751.05 && salarioBase <=4664.68){
+    aliquotaIR = 0.225;
+    parcelaIR = 869.36;
+}
+salarioLiquido = salarioBase - ((salarioBase * aliquotaIR)-parcelaIR);
+console.log("Salário Bruto: R$" + salarioBruto + "  Salário Líquido: R$" + salarioLiquido);

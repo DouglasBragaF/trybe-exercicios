@@ -2,14 +2,20 @@ let a = 10;
 let b = 20;
 let c = 30;
 
+console.log("Exercicio-1");
+
 let soma = a + b;
     console.log(soma);
 let subtracao = a - b;
     console.log(subtracao);
-console.log(a*b);
-console.log(a/b);
-console.log(a%b);
+let multiplicacao = a*b
+    console.log(multiplicacao);
+let divisao = a/b
+    console.log(divisao);
+let modulo = a%b
+    console.log(modulo);
 
+console.log("Exercicio-2");
 if (a>b){
     console.log(a);
 }
@@ -17,6 +23,7 @@ else {
     console.log(b);
 }
 
+console.log("Exercicio-3");
 if (a>b && a>c){
     console.log(a);
 }
@@ -27,6 +34,7 @@ else{
     console.log(c);
 }
 
+console.log("Exercicio-4");
 if (c >0){
     console.log("positive");
 }
@@ -35,11 +43,4 @@ else if (c<0){
 }
 else{
     console.log("zero");
-}
-
-if (a+b+c === 180){
-    console.log();
-}
-else {
-    console.log();
 }

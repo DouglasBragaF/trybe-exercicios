@@ -54,3 +54,28 @@ else{
     triangulo = false
 }
 console.log(triangulo);
+
+console.log("Exercicio-6");
+let peca = "RAINHA";
+switch (peca.toLowerCase()) {
+    case "rei":
+        console.log(peca + " horizontal, vertical e diagonais, uma casa por vez.");
+        break;
+    case "rainha":
+        console.log(peca + " thorizontal, vertical e diagonais, quantas casas por vez.");
+        break;
+    case "bispo":
+        console.log(peca + " linha reta: diagonais, quantas casas por vez.");
+        break;
+    case "cavalo":
+        console.log(peca + " dois continuos e um lateral, um lance por vez.");
+        break;
+    case "torre":
+        console.log(peca + " linha reta: horizontal e vertical, quantas casas por vez.");
+        break;
+    case "peão":
+        console.log(peca + " linha reta: vertical (captura em diagonal), uma casa por vez.");
+        break;
+    default:
+        console.log(peca + "Está peça não existe! Peças: rei; rainha; bispo; cavalo; torre e peão.");
+}

@@ -44,3 +44,13 @@ else if (c<0){
 else{
     console.log("zero");
 }
+
+console.log("Exercicio-5");
+let triangulo = Boolean;
+if (a + b + c == 180){
+    triangulo = true;
+}
+else{
+    triangulo = false
+}
+console.log(triangulo);

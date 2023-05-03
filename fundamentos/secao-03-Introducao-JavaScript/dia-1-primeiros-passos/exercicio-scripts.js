@@ -128,3 +128,13 @@ if (numa / 2 == 1 || numb / 2 == 1 || numc / 2 == 1){
     impar = true;
 }
 console.log(impar);
+
+console.log("Exercicio-10");
+let valorVenda = 100;
+let custo = 50;
+let lucro = 0;
+
+if (valorVenda > 0 && custo > 0){
+    lucro = (valorVenda - (custo + (custo * 0.2)));
+    console.log("Valor total do lucro com mil produtos vendidades: $" + (lucro * 1000) );
+}

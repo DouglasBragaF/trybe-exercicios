@@ -59,3 +59,11 @@ for (let cont = 0; cont < numbers.length; cont += 1){
     }
 }
 console.log(menorValor);
+
+//Utilizando for, crie um array que vá de 1 a 25 e imprima o resultado.//
+let array = [];
+
+for (num = 1; num <= 25; num += 1){
+    array.push(num);
+}
+console.log(array);

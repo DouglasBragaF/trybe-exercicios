@@ -35,3 +35,17 @@ for (let contador = 0; contador < numbers.length; contador += 1){
     }
 }
 console.log(maiorValor);
+
+//Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “Nenhum valor ímpar encontrado”//
+let numerosImpar = 0;
+for (let n = 0; n < numbers.length; n += 1){
+    if((numbers[n] % 2) == 1){
+        numerosImpar += 1;
+    }
+}
+if (numerosImpar > 0){
+    console.log(numerosImpar);
+}
+else {
+    console.log("Nenhum valor ímpar encontrado")
+}

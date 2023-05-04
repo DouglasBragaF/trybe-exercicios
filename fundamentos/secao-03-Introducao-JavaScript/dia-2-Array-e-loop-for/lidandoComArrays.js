@@ -49,3 +49,13 @@ if (numerosImpar > 0){
 else {
     console.log("Nenhum valor ímpar encontrado")
 }
+
+//Utilizando for, descubra o menor valor contido no array e imprima-o//
+let menorValor = 1000000;
+
+for (let cont = 0; cont < numbers.length; cont += 1){
+    if (numbers[cont] < menorValor){
+        menorValor = numbers[cont];
+    }
+}
+console.log(menorValor);
